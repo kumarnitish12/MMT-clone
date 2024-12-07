@@ -1,0 +1,770 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: #56585b;
+}
+
+::-moz-placeholder {
+  color: #56585b;
+}
+
+:-moz-placeholder {
+  color: #56585b;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*image and styling*/
+body {
+  flex-wrap: wrap; 
+  font-family: "Lato", sans-serif;
+  margin:0;
+  background:url("Travel-to-Thailand.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  height:50px;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #171616;
+  backface-visibility:inherit;
+  
+}
+
+/* 
+   Ul styles
+ */
+
+
+ul,
+nav {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+/*
+   TEXT
+
+*/
+h1 {
+  
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1.5rem;
+}
+
+/*
+   image size
+
+ */
+i {
+  font-size: 1.3rem;
+}
+
+/* NAv style out*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 100px 0;
+}
+
+/* nav style in */
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+header nav li:first-child {
+  margin-left: 20px;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+/* Reg btn=*/
+.container-test{
+  display:inline-flex;
+  align-items: center;
+
+}
+.trips{
+  color: #fff;
+  padding: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.Biz{
+  color: #fff;
+  padding: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.property{
+  color: lightcyan;
+  padding: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+
+}
+
+a.btn {
+  color: #fff;
+  padding-bottom:5px;
+  padding-left:8px;
+  padding-right: 5px;
+  margin-top: 2px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a.btn:hover {
+  background: #d73851;
+  border: 1px solid #d73851;
+  color: #fff;
+}
+
+/* home page */
+
+.cover {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.05)),
+    to(rgba(0, 0, 0, 0))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* search btn= */
+
+.flex-form input[type="submit"] {
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+  color: #fff;
+  padding: 0 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 10rem;
+}
+
+.flex-form input[type="submit"]:hover {
+  background: #d73851;
+  border: 1px solid #d73851;
+}
+
+/* search box */
+
+.flex-form {
+  display: -webkit-box;
+  display: flex;
+  z-index: 10;
+  position: relative;
+  width: 500px;
+  
+}
+
+.flex-form > * {
+  border: 0;
+  padding: 0 10px 0 10px;
+  background: #fff;
+  line-height: 50px;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: 0;
+  border-radius: 10rem;
+}
+
+input[type="search"] {
+  flex-basis: 500px;
+}
+
+
+
+@media all and (max-width: 800px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .flex-form {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    flex-basis: 100%;
+  }
+
+  .flex-form > * {
+    font-size: 0.9rem;
+  }
+
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 10px !important;
+  }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .cover {
+    padding: 20px;
+  }
+
+  #madeby {
+    padding: 30px 20px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  header nav li {
+    margin: 0 10px;
+  }
+
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  input[type="search"] {
+    flex-basis: 0;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 2rem;
+  margin-left:25rem;;
+  padding: 2rem;
+  display: inline-flex;
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  
+  
+}
+
+
+
+.form-container {
+  display: flex;
+  width: 20rem;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 5px;
+
+  
+}
+
+.form-group {
+  flex: 1 0 200px;
+  margin-bottom: 1rem;
+  position: absolute;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 100px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #1976d2;
+}
+
+
+
+.to-group
+{
+  width: 300px;
+    height: 112px;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    position: absolute;
+
+}
+
+.from-group{
+  width: 300px;
+    height: 112px;
+    
+    margin-left: 10rem;
+    margin-top: 10rem;
+    position: absolute;
+
+}
+.Departure{
+  width: 300px;
+    height: 112px;
+   position: absolute;
+}
+input[type="date"] {
+  padding: 6px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 11px; /* Font size */
+  outline: none; /* Remove default outline */
+  color: rgb(0, 0, 0);
+  font-weight:500;
+}
+.return-group{
+  width: 300px;
+    height: 112px;
+    
+    margin-top: -rem;
+    /* margin-left: 48rem; */
+    position: absolute;
+}
+.travel-group{
+  width: 300px;
+    height: 112px;
+    border-right: solid 1px #e7e7e7;
+    
+    margin-left: 28rem;
+    position: absolute;
+}
+.boxA
+{
+    
+    height: 90px;
+    width: 225px;
+    background-color: white;
+    padding: 2px 20px 25px;
+    margin-top: 150px;
+    margin-left:-200px;
+    cursor: pointer;
+    border-top-left-radius:   .2rem;
+    border:solid 1px rgba(45, 34, 34, 0.186) ;
+}
+.boxA:h2{
+  margin-bottom: 10px;
+}
+
+.boxB{
+  height: 90px;
+  width: 225px;
+  background-color: white;
+  padding: 2px 20px 25px;
+  /* margin-top: -90px; */
+  cursor: pointer;
+  top: 182px;
+  position: absolute;   
+  border:solid 1px rgba(45, 34, 34, 0.186); 
+}
+
+.box1{
+  height: 90px;
+    width: 150px;
+    background-color: white;
+    padding: 0px 10px 5px;
+    margin-top: -90px;
+    margin-left: 220px;
+    cursor: pointer;
+    border:solid 1px rgba(45, 34, 34, 0.186);
+    /* position: absolute;
+    border-radius: 2rem;*/
+}
+.box2{
+  height: 90px;
+  width: 150px;
+  background-color: white;
+  padding: 0px 10px 5px;
+  margin-left: 365px;
+  margin-top: -90px;
+  position: absolute;
+  cursor: pointer;
+  border:solid 1px rgba(45, 34, 34, 0.186);
+  }
+
+.box3{
+  height: 90px;
+    width: 150px;
+    background-color: white;
+    padding: 0px 10px 5px;
+    margin-right: 200px;
+    margin-left: 500px;
+    margin-top: -90px;
+    position: absolute;
+    cursor: pointer;
+    border:solid 1px rgba(45, 34, 34, 0.215);
+    border-top-right-radius: .2rem;
+}
+
+
+.fare{
+  font: 15px bold Mukta, Lato,sans-sarif;
+  margin-left: -200px;
+  margin-bottom: 100px;
+  color: rgb(4, 4, 4);
+  background-color: white;
+  padding: 30px 40px 40px;
+  
+  
+  }
+
+.container2{
+  cursor: pointer;
+  background-color: white;
+  margin-top: -10rem;
+  padding: 0px 175px;
+}
+
+.regular
+{
+color: rgb(0, 0, 0);
+/*margin-top: -115px;*/
+margin-left: -41px;
+}
+.student
+{
+  margin-top: -41px;
+margin-left: 40px;
+color: rgb(9, 8, 8);
+
+}
+.doctor{
+  margin-top: -42px;
+margin-left: 120px;
+color: rgb(0, 0, 0);
+}
+.snrcitizen{
+  margin-top: -42px;
+margin-left: 190px;
+color: rgb(0, 0, 0);
+}
+.menu{
+  align-items: centre;
+  display: flex;
+  margin-right: 250rem;
+  justify-content: space-evenly;
+  margin-left:15.9rem;
+  margin-top:-6rem;
+  background-color:white;
+  width:50rem;
+  height:4rem;
+  /*border:solid 2px black;*/
+  border-top-left-radius:5px;
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:5px;
+  padding:12px 0px 12px;
+  border-color: black;
+  border-width: 
+  }
+
+
+.flight{
+  color: rgb(0, 1, 2);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+  
+}
+.hotels{
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+
+}
+.villas{
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+
+}
+.packages{
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+
+}
+.trains{
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+
+}
+.Buses{
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+  
+}
+.cabs{
+  color: rgb(0, 0, 0);
+  height: 2rem;
+  width: 20rem;
+  margin-left: 2rem;
+}
+.boxA:hover{
+  background-color:#a0bed6;
+}
+.boxB:hover{
+  background-color:#a0bed6;
+}
+.box1:hover{
+  background-color:#a0bed6;
+}
+.box2:hover{
+  background-color:#a0bed6;
+}
+.box3:hover{
+  background-color:#a0bed6;
+}
+.hotel-img{
+  background-image: url(52.jpg);
+  height: 500px;
+  margin-top: 350px;
+  margin-left:170px; 
+  background-repeat:no-repeat;
+  
+}
+.footer{
+    background-color: #000000;
+    color: lightgray;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Footer link styles */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;}
+
+    .custom-btn {
+      width: 50px;
+      height: 30px;
+      color: #fff;
+      border-radius: 5px;
+      padding: 2px px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+       7px 7px 20px 0px rgba(0,0,0,.1),
+       4px 4px 5px 0px rgba(0,0,0,.1);
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .btn-2 {
+      background: #004dff;
+      background: linear-gradient(0deg, #004dff 0%, #004dff 100%);
+      border: none;
+    }
+    
+    .btn-2:before {
+      height: 0%;
+      width: 2px;
+    }
+    
+    .btn-2:hover {
+      box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    }
+    .flight:hover{
+      color: lightskyblue;
+    }
+    .villas:hover{
+      color: lightskyblue;
+    }
+    .cabs:hover{
+      color: lightskyblue;
+    }
+    .Buses:hover{
+      color: lightskyblue;
+    }
+    .trains:hover{
+      color: lightskyblue;
+    }
+    .trips:hover{
+      color: lightskyblue;
+    }
+    .hotels:hover{
+      color: lightskyblue;
+    }
+    .cards-container {
+      display: flex;
+      gap: 20px;
+      margin: 50px auto;
+      padding: 20px;
+      justify-content: center;
+      position: relative;
+      bottom: -220px;
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    
+    .card h3 {
+      margin: 15px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .card button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .card button:hover {
+      background-color: #0056b3;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    

@@ -1,0 +1,139 @@
+#cab-section {
+    background-color: #212521;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add a fade-in animation on page load */
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  #cab-section h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: white;
+    /* Add a slide-in animation on page load */
+    animation: slideIn 0.5s ease-in;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+    /* Add a fade-in animation on page load */
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #efecec;
+  }
+  
+  .form-group input[type="text"], .form-group select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    /* Add a pulse animation on hover */
+    transition: box-shadow 0.3s ease-in;
+  }
+  
+  .form-group input[type="text"]:hover, .form-group select:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group input[type="date"], .form-group input[type="time"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    /* Add a pulse animation on hover */
+    transition: box-shadow 0.3s ease-in;
+  }
+  
+  .form-group input[type="date"]:hover, .form-group input[type="time"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group i {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 20px;
+    color: #999;
+    /* Add a spin animation on hover */
+    transition: transform 0.3s ease-in;
+  }
+  
+  .form-group i:hover {
+    transform: rotate(360deg);
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    /* Add a pulse animation on hover */
+    transition: background-color 0.3s ease-in;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  h2{
+    color: white;
+  }
+  
+  .cab-image {
+    margin-top: 20px;
+    text-align: center;
+    /* Add a fade-in animation on page load */
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .cab-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a bounce animation on hover */
+    transition: transform 0.3s ease-in;
+  }
+  
+  .cab-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
